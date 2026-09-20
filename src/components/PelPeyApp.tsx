@@ -626,7 +626,7 @@ useEffect(() => {
             <div><Brand /><p className="mt-5 max-w-sm leading-7 text-footer-muted">PedPeyAfrica, A Pan African creative knowledge building and development platform Teaching advanced governance mechanisms, sustainable development, policy, structures, reform and legal civic conversations.</p><p className="mt-8 text-sm text-footer-muted">Built for Africa. Open to the world.</p></div>
             <div><p className="footer-title">Quick links</p><div className="footer-links"><a href="#top">Home</a><a href="#about">About</a><a href="#community">Community</a><a href="#articles">Articles</a></div></div>
             <div><p className="footer-title">Explore</p><div className="footer-links"><a href="#explore">Pan Africanism</a><a href="#explore">The Diaspora</a><a href="#explore">Agenda 2063</a><a href="#articles">AI & Development</a></div></div>
-            <div><p className="footer-title">Legal</p><div className="footer-links"><a href="#top">Privacy</a><a href="#top">Terms of use</a><a href="#top">Accessibility</a><a href="#top">Contact</a></div></div>
+            <div><p className="footer-title">Legal</p><div className="footer-links"><a href="/privacy">Privacy</a><a href="/terms">Terms of use</a><a href="/accessibility">Accessibility</a><a href="/contact">Contact</a></div></div>
           </div>
           <div className="mt-14 flex flex-col gap-3 border-t border-footer-border pt-7 text-xs text-footer-muted sm:flex-row sm:items-center sm:justify-between"><span>© 2026 PedPey Africa. All rights reserved.</span><span>Knowledge · Community · Progress</span></div>
         </div>
