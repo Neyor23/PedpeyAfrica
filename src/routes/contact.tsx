@@ -14,15 +14,15 @@ function Contact() {
         <div className="space-y-4">
           <div>
             <h3 className="font-semibold">Email</h3>
-            <p className="text-muted-foreground">hello@pedpeyaafrica.com</p>
+            <p className="text-muted-foreground">samsonchristian2000@gmail.com</p>
           </div>
           <div>
             <h3 className="font-semibold">Location</h3>
-            <p className="text-muted-foreground">Africa, Remote</p>
+            <p className="text-muted-foreground">Abuja</p>
           </div>
           <div>
             <h3 className="font-semibold">Support Hours</h3>
-            <p className="text-muted-foreground">Monday - Friday, 9am - 5pm WAT</p>
+            <p className="text-muted-foreground">Monday - Friday, 7am - 5pm WAT</p>
           </div>
         </div>
 

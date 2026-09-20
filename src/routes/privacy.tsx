@@ -38,7 +38,7 @@ function Privacy() {
 
         <section>
           <h2 className="text-xl font-semibold mb-3">6. Contact Us</h2>
-          <p className="text-muted-foreground">If you have questions about this Privacy Policy, email hello@pedpeyaafrica.com</p>
+          <p className="text-muted-foreground">If you have questions about this Privacy Policy, email samsonchristian2000@gmail.com</p>
         </section>
       </div>
     </div>
