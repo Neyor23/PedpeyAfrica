@@ -30,7 +30,7 @@ if (!article) {
 
   return (
     <div className="min-h-screen bg-[#f8f9f6]">
-      <div className="bg-[#0a4d2e] text-white py-12 px-6">
+      <div className="bg-[#5D4037] text-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           <Link to="/" className="text-sm opacity-70">← Back to PedPey Africa</Link>
           <div className="mt-4 inline-block bg-[#f4b400] text-black text-xs font-bold px-3 py-1 rounded-full">
