@@ -605,12 +605,12 @@ useEffect(() => {
             {filteredArticles.length ? (
               <div className="mt-9 grid min-w-0 grid-cols-1 gap-x-5 gap-y-10 sm:mt-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-12">
                 {filteredArticles.map((article) => (
-                   <button className="article-card group min-w-0 text-left" key={article.title} onClick={() => {const r = (articlesData as any).find((x:any)=>x.title===article.title); window.location.href = "/article/" + r.id}}>
+                   <div key={article.title} onClick={() => { const r = (articlesData as any).find((x:any)=>x.title===article.title); console.log("CLICKED", article.title, r); if(r?.id) window.location.href = "/article/" + r.id }} className="article-card group min-w-0 text-left cursor-pointer" style={{pointerEvents: 'auto', position: 'relative', zIndex: 10}}>
                     <div className={`article-image${article.poster ? " article-image-poster" : ""}`}><img src={article.image} alt={article.imageAlt} width={article.width} height={article.height} loading="lazy" /></div>
                     <p className="mt-5 text-xs font-bold uppercase text-primary">{article.category}</p>
                     <h3 className="mt-3 font-display text-xl font-bold leading-snug">{article.title}</h3>
                     <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold">Read insight <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" /></span>
-                  </button>
+                  </div>
                 ))}
               </div>
             ) : (
