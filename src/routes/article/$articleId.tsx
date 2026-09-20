@@ -9,8 +9,13 @@ function ArticleDetail() {
   const { articleId } = Route.useParams()
 
   // CLEANER: removes ) or any extra characters, so "1)" becomes "1"
-  const cleanId = Number(String(articleId).replace(/[^0-9]/g, ""))
-  const article = articlesData.find((a) => a.id === cleanId)
+  const raw = String(articleId)
+const cleanId = Number(raw.replace(/[^0-9]/g, ""))
+let article = articlesData.find((a) => a.id === cleanId)
+if (!article) {
+  const decoded = decodeURIComponent(raw)
+  article = articlesData.find((a) => a.title === decoded)
+}
 
   if (!article) {
     return (
