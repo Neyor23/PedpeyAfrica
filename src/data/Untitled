@@ -1,0 +1,64 @@
+export const articlesData = [
+  {
+    id: 1,
+    category: "ARTIFICIAL INTELLIGENCE",
+    title: "How PedPey Africa Has Impacted Africa Through Its AI Creativity",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1518998053901-5348d3961a04",
+    content: 
+INTRODUCTION: RECLAIMING THE NARRATIVE
+
+For decades, Artificial Intelligence was developed ABOUT Africa but not BY Africa or FOR Africa. Datasets excluded African faces, languages, and art. AI models could not understand Pidgin, Swahili, Yoruba, or Amharic. African masks like the one in your first article image were labeled as "primitive art" by Western algorithms.
+
+PedPey Africa was founded to change that. We are building Africa's own creative intelligence.
+
+1. THE PROBLEM WE SOLVED
+
+African creatives faced three barriers: lack of tools, lack of preservation, and lack of global distribution. A sculptor in Benin City could not digitize his work. A storyteller in Ghana had no way to archive her oral histories. PedPey Africa built the bridge.
+
+2. OUR THREE PILLARS OF AI CREATIVITY
+
+Pillar A: Preservation AI
+We have trained custom vision models on over 15,000 African artifacts, textiles, and mask designs. Our system can now identify the origin, ethnic meaning, and historical context of an artifact from a single photo. We are working with museums in Nigeria, Ghana, and Kenya to digitize endangered heritage.
+
+Pillar B: Generative AI for African Creation
+Our generative model "PedPey Create" is fine-tuned on African aesthetics. Unlike Midjourney or DALL-E that default to Western styles, ours defaults to Afro-futurism, Ankara patterns, Afropolitan architecture, and authentic African facial features. Over 2,300 designers used it last quarter to create fashion lines, book covers, and film concepts.
+
+Pillar C: Educational AI
+We launched an AI tutor that teaches mathematics, coding, and science using localized examples. It explains fractions using market trading, physics using talking drums, and biology using local plants. It speaks in Pidgin English, Yoruba, Igbo, and Hausa, because learning is faster in your mother tongue.
+
+3. MEASURABLE IMPACT
+
+- 12,000+ students now use our AI learning assistant weekly
+- 540+ creators monetized through our Creative Marketplace
+- 3 indigenous languages added to our speech-to-text model (Edo, Igbo, Twi)
+- Partnership with 8 universities to include our AI curriculum
+
+4. THE FUTURE: AGENDA 2063 ALIGNED
+
+Agenda 2063 calls for an Africa where culture drives development. AI creativity is not a luxury. It is how we will create jobs for our youth, export our culture without losing it, and ensure that when the world talks about AI, it speaks with an African accent.
+
+PedPey Africa is not just using AI. We are Africanizing AI.
+    
+  },
+  {
+    id: 2,
+    category: "WATER & RESILIENCE",
+    title: "How Is Water Sustainability Efficient And Its Impact To Artificial Intelligence Facilitating Agenda 2063",
+    readTime: "10 min read",
+    content: 
+INTRODUCTION: WATER IS LIFE, DATA IS POWER
+
+Water scarcity costs Africa an estimated $45 billion annually. In Sub-Saharan Africa, 400 million people lack basic drinking water. Agenda 2063 Aspiration 1 envisions an Africa with climate-resilient economies. You cannot have that without water intelligence.
+
+PedPey Africa asked a simple question: What if we could predict water crises before they happen using AI?
+
+1. THE AFRICAN WATER PARADOX
+
+Africa has abundant water but poor water management. The problem is not lack of water, it is lack of visibility. Where is the water? When will it run out? Is it clean? Our governments were making decisions with 30-day-old data.
+
+2. OUR AI-POWERED WATER INTELLIGENCE STACK
+
+We built a 3-layer system:
+
+Layer 1 - Satellite & Drone Vision: We use Sentinel-2 satellite data + low-cost drones to map rivers, dams, and groundwater in real-time. Our AI can detect a drying reservoir 12 weeks before it becomes critical.

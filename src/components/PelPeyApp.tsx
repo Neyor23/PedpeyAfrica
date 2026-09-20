@@ -19,6 +19,8 @@ import {
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import {Eye, EyeOff} from "lucide-react";
 import { signIn, signUp, signInWithGoogle } from "../lib/auth";
+import { useNavigate } from "@tanstack/react-router";
+import { articlesData } from "@/data/articlesData";
 import { supabase } from "../lib/supabase";
  [];
 
@@ -235,10 +237,23 @@ function Modal({
           </button>
         </div>
         {isArticle ? (
-          <p className="mt-5 leading-7 text-muted-foreground">
-            This reading experience is being prepared for the PedPey Africa knowledge library. Explore the other insights while we complete it.
-          </p>
-        ) : (
+<div className="mt-5">
+  <p className="mt-5 leading-7 text-muted-foreground">
+    Your article is ready. Opening full reading experience...
+  </p>
+  <button
+    className="mt-6 rounded-full bg-black px-6 py-3 text-sm font-bold text-white"
+    onClick={() => {
+      onClose();
+      // go to real article page
+      const id = (window as any).__selectedArticleId || 1;
+      window.location.href = `/article/${id}`;
+    }}
+  >
+    Continue to full article →
+  </button>
+</div>
+) : (
           <form
   className="mt-6 space-y-4"
   onSubmit={async (event) => {
@@ -346,6 +361,7 @@ export function PedPeyApp() {
   const [lessonSent, setLessonSent] = useState(false);
   const [communityQuestion, setCommunityQuestion] = useState("");
   const [postedQuestion, setPostedQuestion] = useState("");
+  const navigate = useNavigate();
 
   const [user, setUser] = useState<any>(null);
 
@@ -589,7 +605,7 @@ useEffect(() => {
             {filteredArticles.length ? (
               <div className="mt-9 grid min-w-0 grid-cols-1 gap-x-5 gap-y-10 sm:mt-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-12">
                 {filteredArticles.map((article) => (
-                   <button className="article-card group min-w-0 text-left" key={article.title} onClick={() => setModal("article")}>
+                   <button className="article-card group min-w-0 text-left" key={article.title} onClick={() => {const r = (articlesData as any).find((x:any)=>x.title===article.title); (navigate as any)({to:`/article/${r?.id||1})`}) }}>
                     <div className={`article-image${article.poster ? " article-image-poster" : ""}`}><img src={article.image} alt={article.imageAlt} width={article.width} height={article.height} loading="lazy" /></div>
                     <p className="mt-5 text-xs font-bold uppercase text-primary">{article.category}</p>
                     <h3 className="mt-3 font-display text-xl font-bold leading-snug">{article.title}</h3>
