@@ -1,68 +1,169 @@
-export const articlesData = [
+export interface Article {
+    id: number;
+    title: string;
+    category: string;
+    image: string;
+    excerpt: string;
+    content: string;
+    author: string;
+    date: string;
+  }
+  
+  export const articlesData: Article[] = [
     {
       id: 1,
-      title: "How PedPey Africa Has Impacted Africa Through Its AI Creativity",
-      category: "ARTIFICIAL INTELLIGENCE",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+      title: "How PedPey Africa has impacted Africa through her AI integration and creativity",
+      category: "AI & Impact",
+      image: "/images/article1.jpg",
+      excerpt: "Operationalizing African Knowledge Systems for The Africa We Want - Agenda 2063",
+      date: "2026-09-20",
       author: "PedPey Africa",
-      date: "Sep 20, 2026",
-      readTime: "5 min read",
-      content: "How PedPey Africa Has Impacted Africa Through Its AI Creativity",
-      fullContent: "How PedPey Africa Has Impacted Africa Through Its AI Creativity\n\nPedPey Africa is transforming the continent through innovative AI solutions that are locally relevant and globally competitive. From education to agriculture, our AI creativity is solving real African problems.\n\nOur approach combines indigenous knowledge with cutting-edge technology, creating tools that understand African contexts, languages, and challenges. This is AI made in Africa, for Africa."
-    },
-    {
-      id: 2,
-      title: "How Is Water Sustainability Efficient And Its Impact To Artificial Intelligence Facilitating Agenda 2063",
-      category: "WATER & RESILIENCE",
-      image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800",
-      author: "PedPey Africa",
-      date: "Sep 18, 2026",
-      readTime: "6 min read",
-      content: "Water sustainability and AI for Agenda 2063",
-      fullContent: "How Is Water Sustainability Efficient And Its Impact To Artificial Intelligence Facilitating Agenda 2063\n\nWater is life, and sustainable water management is key to achieving Africa's Agenda 2063. Artificial Intelligence is now helping us predict droughts, manage irrigation, and ensure clean water access.\n\nPedPey Africa explores how AI-driven water solutions can build resilient communities across the continent."
-    },
-    {
-      id: 3,
-      title: "New Non-Kinetic Approach Towards Sustainable Development Programs In Africa",
-      category: "DEVELOPMENT PROGRAMS",
-      image: "https://images.unsplash.com/photo-1508514177221-188b1abf2f9c?w=800",
-      author: "PedPey Africa",
-      date: "Sep 15, 2026",
-      readTime: "5 min read",
-      content: "A new non-kinetic approach to development",
-      fullContent: "New Non-Kinetic Approach Towards Sustainable Development Programs In Africa\n\nTraditional development models are not enough. A non-kinetic approach focuses on education, technology transfer, and community empowerment rather than just infrastructure.\n\nLearn how PedPey Africa is pioneering sustainable programs that last."
-    },
-    {
-      id: 4,
-      title: "What Is The Importance of Youth Community Engagements In Africa",
-      category: "YOUTH LEADERSHIP",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
-      author: "PedPey Africa",
-      date: "Sep 12, 2026",
-      readTime: "4 min read",
-      content: "The power of youth engagement in Africa",
-      fullContent: "What Is The Importance of Youth Community Engagements In Africa\n\nAfrica is the youngest continent in the world. Engaging youth in community development is not optional, it is essential for our future.\n\nThis article explores how youth-led initiatives are driving change, and how PedPey Africa supports youth leadership across the continent."
-    },
-    {
-      id: 5,
-      title: "From Localized Learning To Digitalized Learning Through The Availability Of PedPey Africa AI And Development",
-      category: "DIGITAL LEARNING",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800",
-      author: "PedPey Africa",
-      date: "Sep 10, 2026",
-      readTime: "6 min read",
-      content: "From localized to digitalized learning",
-      fullContent: "From Localized Learning To Digitalized Learning Through The Availability Of PedPey Africa AI And Development\n\nEducation is evolving from chalkboards in local languages to AI-powered digital platforms accessible to all.\n\nDiscover how PedPey Africa AI is bridging the gap between localized knowledge and digital learning, making quality education available even in remote areas."
-    },
-    {
-      id: 6,
-      title: "Benefits of Strategic Partnership with PedPey Africa",
-      category: "PARTNERSHIPS",
-      image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800",
-    author: "PedPey Africa",
-    date: "Sep 8, 2026",
-    readTime: "4 min read",
-    content: "Why partner with PedPey Africa",
-    fullContent: "Benefits of Strategic Partnership with PedPey Africa\n\nPartnering with PedPey Africa means joining a movement that is building Africa's future with AI, education, and sustainable development.\n\nOur partners gain access to innovative solutions, youth networks, and a shared vision for Agenda 2063. Learn how your organization can collaborate with us to create lasting impact.\n\nOur 'Building Youth' initiative is one example of how partnerships create real change."
+      content:
+        "<h2>Operationalizing African Knowledge Systems</h2>" +
+        "<p>To achieve The Africa We Want (Agenda 2063), the continent must bridge technical innovation with indigenous wisdom. PedPey Africa (The Pan Africa Technical Electronic Mechanism) serves as an engine for this operational shift.</p>" +
+        "<p>Rather than relying on imported technical frameworks or reactive military solutions, PedPey Africa synthesizes AI data integration, creative storytelling (Orange Economy), and non-kinetic development strategies into a unified platform. It converts fragmented grassroots experiences into structured Lesson Capital across all 54 African nations.</p>" +
+        "<h2>AI Integration: Transforming Data into Lesson Capital</h2>" +
+        "<p>Traditional development models often struggle with fragmented data and one-size-fits-all policy interventions. PedPey Africa leverages Artificial Intelligence to contextualize knowledge for regional execution:</p>" +
+        "<ul>" +
+        "<li><b>Predictive Resource Mapping:</b> By unifying spatial data, climate analytics, and hydrological metrics (such as aquifer health and basin levels), the platform enables predictive water sustainability models. This equips local communities to implement AI-driven precision agriculture and climate early warning networks.</li>" +
+        "<li><b>Aggregating Grassroots Innovation:</b> Through its Lesson Capital framework, AI systems process, translate, and cross-reference community-led solutions from East, West, North, Southern, and Central Africa. A water management technique tested in the Sahel can be adapted and deployed in the Horn of Africa through automated knowledge synthesis.</li>" +
+        "<li><b>Data Sovereignty and Policy Engineering:</b> The platform operationalizes the AU Continental AI Strategy, ensuring that data generated by African citizens remains locally governed and applied directly to African development goals.</li>" +
+        "</ul>" +
+        "<h2>The Non-Kinetic Impact: Soft Power and Civic Empowerment</h2>" +
+        "<p>Building on non-kinetic approaches to development, PedPey Africa shifts regional security from reactive enforcement to proactive civic empowerment:</p>" +
+        "<ul>" +
+        "<li><b>Preventive Peacebuilding:</b> Instead of relying solely on kinetic military responses, the platform utilizes civic tech to map local conflict drivers such as resource scarcity around land and water, enabling early mediation and community-led dialogue.</li>" +
+        "<li><b>Democratic Accountability and Open Governance:</b> By opening public channels for Q and A, open-data tracking, and civic participation, the mechanism builds institutional trust. Transparent data access disarms disinformation before it triggers social instability.</li>" +
+        "</ul>" +
+        "<h2>Creative Leadership and the Orange Economy</h2>" +
+        "<p>Technological tools require compelling narratives to drive widespread adoption. PedPey Africa engages youth creative leaders to transform complex technical data into cultural action:</p>" +
+        "<ul>" +
+        "<li><b>Narrative Sovereignty:</b> The platform links technological infrastructure with African arts, sculpture, digital storytelling, and heritage preservation. This demonstrates that future-facing technology can remain deeply rooted in local identity.</li>" +
+        "<li><b>Monetizing Youth Innovation:</b> By offering a platform for creative assets, digital tools, and community research,PedPey Africa helps young African innovators turn social interventions into viable micro-enterprises, advancing Aspiration 6 of Agenda 2063.</li>" +
+      "</ul>" +
+      "<h2>Action Plan for Youth Leaders</h2>" +
+      "<ul>" +
+      "<li><b>Contribute Community Lesson Capital:</b> Document local project outcomes whether in water conservation, civic tech, or community diplomacy and submit them to the platform to expand the continents shared knowledge base.</li>" +
+      "<li><b>Build Non-Kinetic Digital Campaigns:</b> Translate data from the platform into accessible media (podcasts, infographics, short-form video) to drive local policy reform.</li>" +
+      "<li><b>Pioneer Eco-Friendly Computing Initiatives:</b> Advocate for localized data center development that relies on renewable energy and sustainable, closed-loop water cooling systems.</li>" +
+      "</ul>"
   },
-]
+  {
+    id: 2,
+    title: "Water Sustainability and AI: A Connected Lens for The Africa We Want",
+    category: "Water & AI",
+    image: "/images/article2.jpg",
+    excerpt: "Water efficiency and artificial intelligence form a powerful feedback loop within Agenda 2063",
+    date: "2026-09-20",
+    author: "PedPey Africa",
+    content:
+      "<p>As youth creative leaders steering The Africa We Want, we must look at development through a connected lens. Water sustainability is not just an environmental metric, it is the foundational infrastructure for energy, agriculture, public health, and industrial growth across our continent. When paired with Artificial Intelligence (AI) and anchored in the African Unions Africa Water Vision 2063 and the AU Continental AI Strategy, technology shifts from a luxury to an active tool for pan-African liberation and development.</p>" +
+      "<h2>Water efficiency and artificial intelligence form a powerful feedback loop within the implementation of Agenda 2063</h2>" +
+      "<ul>" +
+      "<li><b>AI for Efficient Water Stewardship:</b> Machine learning algorithms, IoT sensors, and satellite imagery optimize precision irrigation, detect underground pipe leaks before massive loss occurs, and provide early warning models for climate-induced droughts and floods.</li>" +
+      "<li><b>Sustainable Water for Green Computing:</b> Large-scale AI deployment requires vast computational infrastructure (data centers), which demands significant energy and cooling. Building sustainable, closed-loop, and water-efficient cooling models ensures our digital transition does not drain local community water tables.</li>" +
+      "</ul>" +
+      "<h2>Strategic Priorities for Youth Creative Leaders</h2>" +
+      "<ul>" +
+      "<li><b>Advance Data Sovereignty and Digital Twins:</b> Build localized, open-source AI models using real-time spatial data to map ground aquifers and urban supply networks.</li>" +
+      "<li><b>Promote Circular Water Systems:</b> Integrate AI in urban design to manage wastewater treatment, rainwater harvesting, and greywater recycling.</li>" +
+      "<li><b>Drive Policy and Ethical Tech Advocacy:</b> Champion eco-friendly computing and push for AI infrastructure powered by renewable energy and zero-potable-water cooling technologies.</li>" +
+      "</ul>"
+  },
+  {
+    id: 3,
+    title: "Non kinetic approach towards sustainable development programs in africa",
+    category: "Non-Kinetic Development",
+    image: "/images/article3.jpg",
+    excerpt: "Shifting from kinetic interventions to prevention through soft power and civic tech",
+    date: "2026-09-20",
+    author: "PedPey Africa",
+    content:
+    "<p>Traditional approaches to peace and regional stability in Africa have heavily favored kinetic interventions, military operations, enforcement actions, and security-first enforcement. While physical security is vital, hard power alone cannot address the root causes of underdevelopment: economic exclusion, climate vulnerability, governance deficits, and institutional distrust.</p>" +
+      "<p>A non-kinetic approach shifts the paradigm from reaction to prevention. It harnesses soft power, cultural diplomacy, behavioral economics, creative media, digital technology, and community-driven reconciliation to build the structural foundation required for sustainable development.</p>" +
+      "<h2>Key Pillars of Non-Kinetic Sustainable Development</h2>" +
+      "<h3>1. Cultural Capital and the Creative Economy (The Orange Economy)</h3>" +
+      "<ul>" +
+      "<li><b>Narrative Sovereignty:</b> Reclaiming African narratives using film, music, fashion, and digital arts to foster continental integration and counter extremist propaganda.</li>" +
+      "<li><b>Youth Employment:</b> Leveraging creative industries as low-barrier engines for job creation, keeping young people engaged in productive economic life rather than vulnerable to recruitment by non-state armed groups.</li>" +
+      "</ul>" +
+      "<h3>2. Civic Technology and Strategic Digital Engagement</h3>" +
+      "<ul>" +
+      "<li><b>Information Integrity:</b> Deploying open-source intelligence (OSINT) and civic technology platforms to combat disinformation, map community needs, and track public expenditure.</li>" +
+      "<li><b>Inclusive E-Governance:</b> Creating digital spaces where marginalized youth directly participate in local policymaking, strengthening democratic resilience without social conflict.</li>" +
+      "</ul>" +
+      "<h3>3. Community-Driven Mediation and Indigenous Peace Architecture</h3>" +
+      "<ul>" +
+      "<li><b>Restorative Justice:</b> Utilizing traditional dispute resolution mechanisms (e.g., the Baraza systems or Gacaca principles) to address resource competition (such as farmer-herder conflicts) before it escalates into physical violence.</li>" +
+      "<li><b>Climate Diplomacy:</b> Building local natural resource management committees to democratize the distribution of land and water, addressing ecological threats through negotiation rather than enforcement.</li>" +
+      "</ul>" +
+      "<h2>Strategic Roadmap for Youth Creative Leaders</h2>" +
+      "<ul>" +
+      "<li><b>Deploy Counter-Narrative Media Campaigns:</b> Design digital media, podcasts, and gamified learning platforms that promote civic responsibility, pan-African unity, and violent extremism prevention.</li>" +
+      "<li><b>Establish Local Innovation Hubs:</b> Turn community spaces into creative incubation centers that pair artistic expression with digital literacy and social enterprise.</li>" +
+      "<li><b>Institutionalize Youth Diplomacy:</b> Advocate for youth inclusion in formal peace negotiations, multilateral trade dialogue (AfCFTA execution), and national development planning.</li>" +
+      "</ul>"
+  },
+  {
+    id: 4,
+    title: "What is the important of youth creativity engagements in Africa",
+    category: "Youth Creativity",
+    image: "/images/article4.jpg",
+    excerpt: "Over 60 percent under 25 - youth creativity as driver of economic, social and political transformation",
+    date: "2026-09-20",
+    author: "PedPey Africa",
+    content:
+    "<p>Africa holds a population of over 60 percent under the age of 25 years through youth creative engagements, music AI, fashion, digital content, architecture visual arts etc. as a vital driver of economic, social, and political transformation.</p>" +
+      "<h2>The important of engaging Africans Youth through creativity can be considered as fellows</h2>" +
+      "<ul>" +
+      "<li><b>Global Soft Power and Cultural Reclamation:</b> Exporting African Identity Creative expressions such as Nollywood, South Africas Amapiano, Afrobeats, and high-fashion contemporary design has reframed global narratives about the continent on African terms.</li>" +
+      "<li><b>Preserving Heritage through Modernization:</b> Youth-led creative work bridges traditional cultural values with contemporary global styles, ensuring heritage remains relevant rather than static.</li>" +
+      "<li><b>Digital Economy Integration:</b> Smartphone adoption and affordable digital tools allow young creators to commercialize content globally with platforms like YouTube, TikTok, and Spotify bringing foreign revenue directly into local economies.</li>" +
+      "<li><b>Social Cohesion and Civic Activism:</b> Amplifying Youth Voices through Creative channels give young people a peaceful outlet to express political dissent, address corruption, and demand structural reforms (e.g., through protest music, graphic art, and satirical media)</li>" +
+      "<li><b>Mitigating Conflict:</b> In post-conflict or economically vulnerable regions, creative hubs, arts collectives, and youth-led media provide positive outlets that foster community resilience and reduce youth vulnerability to violence or extremist recruitment.</li>" +
+      "</ul>"
+  },
+  {
+    id: 5,
+    title: "From localized learning to digitalised learning through the availability of water and Ai development",
+    category: "Education",
+    image: "/images/article5.jpg",
+    excerpt: "Securing water frees minds, pairing with AI expands local learning into global revolution",
+    date: "2026-09-20",
+    author: "PedPey Africa",
+    content:
+      "<p>When we secure basic human needs like water, we free the minds of our youth. When we pair that mental freedom with digital tools and AI, localized learning expands into a global creative revolution.</p>" +
+      "<h2>Sustainable Development goals and The Youth Imperative</h2>" +
+      "<p>Development occurs when hardware (water networks, power grids), software (AI algorithms, connectivity), and human agency align. The Creative Youth Role, we must position ourselves not merely as consumers of global technology, but as co-designers.</p>" +
+      "<p><b>Systems Thinking strategy:</b> Sustainable development means recognizing that solving a water crisis directly feeds into educational outcomes, which directly feeds into the digital creative economy.</p>" +
+      "<h2>Water as the Precondition for Intellectual Capital</h2>" +
+      "<p>You cannot digitalize a classroom if young people are spending four hours a day carrying jerrycans.</p>" +
+      "<p><b>The Time-Loss Paradox:</b> In many rural and peri-urban African communities, water scarcity directly deprives youth, especially young women, of school hours. Basic physical infrastructure is the foundation of cognitive space</p>" +
+      "<p><b>The Catalyst:</b> The availability of clean water reduces waterborne illnesses, boosts school retention, and converts lost travel hours into active learning hours. Localized physical survival must be solved to unlock digital, high-order thinking.</p>" +
+      "<h2>Transitioning from Localized to Digitalized Learning</h2>" +
+      "<p>Localized learning is rich in context, culture, and oral tradition, but it often lacks global scale and physical accessibility. Digitalization is the bridge.</p>" +
+      "<p><b>Democratizing Knowledge:</b> Digital platforms strip away geographical barriers, allowing a creator in a village to access the same computational frameworks as a peer in a global tech hub.</p>" +
+      "<h2>Artificial Intelligence as an Accelerator,Not a Substitute</h2>" +
+      "<p>For African youth creative leaders, Artificial Intelligence is not just a tool for automation; it is an amplifier of storytelling, resource mapping, and problem-solving.</p>" +
+      "<p><b>Localized AI Applications such as PedpeyAfrica:</b> Young African developers and creatives are deploying AI to solve hyper-local problems, from predicting localized rainfall patterns to modeling smart water distribution systems (like digital twins). AI allows young animators, sound designers, and visual artists to produce high-grade African narratives at a fraction of traditional production costs, bypassing legacy media gatekeepers.</p>"
+  },
+  {
+    id: 6,
+    title: "Importance and benefits of partnership with PedpeyAfrica",
+    category: "Partnership",
+    image: "/images/article6.jpg",
+    excerpt: "The Power of Partnering with PedPey Africa - a digital knowledge highway",
+    date: "2026-09-20",
+    author: "PedPey Africa",
+    content:
+      "<h2>The Power of Partnering with PedPey Africa</h2>" +
+      "<p>PedPey Africa (The Pan Africa Technical Electronic Mechanism) serves as a digital knowledge highway, bringing together AI-driven intelligence, water and climate sustainability, non-kinetic development, and youth creative leadership.</p>" +
+      "<p>Partnering with PedPey Africa allows organizations, youth networks, policymakers, and private entities to move beyond isolated local projects and align with a broader, continent-wide ecosystem driving African Union Agenda 2063.</p>" +
+      "<h2>Core Importance of Partnering with PedPey Africa</h2>" +
+      "<ul>" +
+      "<li><b>Unifying Disconnected Grassroots Initiatives:</b> Many African youth-led projects operate in silos. A partnership with PedPey Africa connects isolated local solutions into a shared Lesson Capital repository, allowing proven models in one region to be replicated across all 54 AU member states.</li>" +
+      "<li><b>Operationalizing AU Agenda 2063 Frameworks:</b> PedPey Africa translates broad policy goals, such as the Africa Water Vision 2063 and the AU Continental AI Strategy, into actionable, digital tools for grassroots execution.</li>" +
+      "<li><b>Pioneering Non-Kinetic Peace and Development:</b> By prioritizing civic engagement, digital open data, counter-narrative storytelling, and conflict mediation, partnership with PedPey Africa fosters long-term regional stability through soft power rather than enforcement.</li>" +
+      "</ul>"
+  }
+];
