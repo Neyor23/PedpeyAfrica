@@ -605,7 +605,7 @@ useEffect(() => {
             {filteredArticles.length ? (
               <div className="mt-9 grid min-w-0 grid-cols-1 gap-x-5 gap-y-10 sm:mt-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-12">
                 {filteredArticles.map((article) => (
-                   <div key={article.title} onClick={() => { window.location.href = "/article/" + (article as any).id }} className="article-card group min-w-0 text-left cursor-pointer" style={{pointerEvents: 'auto', position: 'relative', zIndex: 10}}>
+                   <div key={article.title} onClick={() => { window.location.href = "/article/" + (articlesData as any).find((x:any) => x.title === article.title)?.id }} className="article-card group min-w-0 text-left cursor-pointer" style={{pointerEvents: 'auto', position: 'relative', zIndex: 10}}>
                     <div className={`article-image${article.poster ? " article-image-poster" : ""}`}><img src={article.image} alt={article.imageAlt} width={article.width} height={article.height} loading="lazy" /></div>
                     <p className="mt-5 text-xs font-bold uppercase text-primary">{article.category}</p>
                     <h3 className="mt-3 font-display text-xl font-bold leading-snug">{article.title}</h3>
