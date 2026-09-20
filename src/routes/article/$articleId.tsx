@@ -7,13 +7,17 @@ export const Route = createFileRoute('/article/$articleId')({
 
 function ArticleDetail() {
   const { articleId } = Route.useParams()
-  const article = articlesData.find((a) => a.id === Number(articleId))
+  
+  // FIX: compare as string so 1 == "1" works
+  const article = articlesData.find((a) => String(a.id) === String(articleId))
 
   if (!article) {
     return (
       <div className="p-20 text-center">
-        <h1 className="text-3xl font-bold">Article not found</h1>
-        <Link to="/" className="mt-4 inline-block bg-[#0a4d2e] text-white px-6 py-2 rounded-full">Go home</Link>
+        <h1 className="text-2xl">Article not found</h1>
+        <p className="mt-2 text-gray-500">You searched for ID: {articleId}</p>
+        <p className="text-sm text-gray-400">Available IDs: {articlesData.map(a => a.id).join(', ')}</p>
+        <Link to="/" className="mt-6 inline-block bg-[#0a4d2e] text-white px-6 py-2 rounded-full">Go home</Link>
       </div>
     )
   }
