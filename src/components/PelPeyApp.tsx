@@ -407,19 +407,43 @@ useEffect(() => {
     );
   }, [query]);
 
-  const submitLesson = (event: FormEvent) => {
-    event.preventDefault();
-    if (!lesson.trim()) return;
-    setLessonSent(true);
-    setLesson("");
-  };
+  const FORMSPREE_ID = "https://formspree.io/f/mnpnzrgq" // <-- change to your real ID
 
-  const submitQuestion = (event: FormEvent) => {
-    event.preventDefault();
-    if (!communityQuestion.trim()) return;
-    setPostedQuestion(communityQuestion.trim());
-    setCommunityQuestion("");
-  };
+const submitLesson = async (event: FormEvent) => {
+  event.preventDefault();
+  if (!lesson.trim()) return;
+  
+  // Send to your email pedpeyafrica@gmail.com
+  await fetch(FORMSPREE_ID, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
+    body: JSON.stringify({ 
+      type: "LESSON CAPITAL", 
+      message: lesson 
+    }),
+  });
+
+  setLessonSent(true);
+  setLesson("");
+  setTimeout(() => setLessonSent(false), 5000);
+};
+
+const submitQuestion = async (event: FormEvent) => {
+  event.preventDefault();
+  if (!communityQuestion.trim()) return;
+
+  await fetch(FORMSPREE_ID, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
+    body: JSON.stringify({ 
+      type: "Q&A QUESTION", 
+      message: communityQuestion 
+    }),
+  });
+
+  setPostedQuestion(communityQuestion.trim());
+  setCommunityQuestion("");
+};
 
   return (
     <div id="top" className="min-h-screen overflow-x-clip bg-background text-foreground">
